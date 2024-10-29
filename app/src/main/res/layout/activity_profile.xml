@@ -32,9 +32,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
 
-       <!-- Profile Picture box -->
-
-
         <!-- Profile Box -->
         <LinearLayout
             android:id="@+id/profileBox"
@@ -48,63 +45,127 @@
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp">
 
-            <!-- Profile Fields -->
+            <!-- Profile Picture -->
+            <ImageView
+                android:id="@+id/profilePicture"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="16dp"
+                android:background="@android:color/darker_gray"
+                android:contentDescription="Profile Picture" />
 
-            <!-- Name -->
-            <TextView
-                android:id="@+id/name"
-                android:layout_width="wrap_content"
+            <!-- Mini Boxes for Profile Fields -->
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Name: John Doe"
-                android:textSize="18sp"
-                android:layout_marginBottom="8dp" />
+                android:orientation="vertical"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/custom_button_background"
+                android:padding="8dp">
 
-            <!-- Email Address -->
-            <TextView
-                android:id="@+id/emailAddress"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Email: JohnDoe@example.com"
-                android:textSize="18sp"
-                android:layout_marginBottom="8dp" />
+                <!-- Name -->
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name: John Doe"
+                    android:textSize="18sp" />
 
-            <!-- Phone Number -->
-            <TextView
-                android:id="@+id/phoneNumber"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Phone Number: +44 1234 5678"
-                android:textSize="18sp"
-                android:layout_marginBottom="8dp" />
+            </LinearLayout>
 
-            <!-- Address -->
-            <TextView
-                android:id="@+id/address"
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Address: 123 Main Street, Anytown, AA AA"
-                android:textSize="18sp"
-                android:layout_marginBottom="8dp" />
+                android:orientation="vertical"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/custom_button_background"
+                android:padding="8dp">
 
-            <!-- Job Title -->
-            <TextView
-                android:id="@+id/jobTitle"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Job Title: Manager"
-                android:textSize="18sp"
-                android:layout_marginBottom="8dp" />
+                <!-- Email Address -->
+                <TextView
+                    android:id="@+id/emailAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email: JohnDoe@example.com"
+                    android:textSize="18sp" />
 
-            <!-- Salary -->
-            <TextView
-                android:id="@+id/salary"
-                android:layout_width="wrap_content"
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Salary: £100,000"
-                android:textSize="18sp"
-                android:layout_marginBottom="8dp" />
+                android:orientation="vertical"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/custom_button_background"
+                android:padding="8dp">
+
+                <!-- Phone Number -->
+                <TextView
+                    android:id="@+id/phoneNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Phone Number: +44 1234 5678"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/custom_button_background"
+                android:padding="8dp">
+
+                <!-- Address -->
+                <TextView
+                    android:id="@+id/address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Address: 123 Main Street, Anytown, AA AA"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/custom_button_background"
+                android:padding="8dp">
+
+                <!-- Job Title -->
+                <TextView
+                    android:id="@+id/jobTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Job Title: Manager"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/custom_button_background"
+                android:padding="8dp">
+
+                <!-- Salary -->
+                <TextView
+                    android:id="@+id/salary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Salary: £100,000"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
 
         </LinearLayout>
+
     </LinearLayout>
 
     <!-- Bottom Border Title -->
