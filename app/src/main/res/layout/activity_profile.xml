@@ -14,10 +14,12 @@
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:background="#007BFF"
+        android:fontFamily="sans-serif"
         android:gravity="center"
         android:text="Profile"
         android:textColor="@android:color/black"
         android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintTop_toTopOf="parent" />
 
     <!-- Content Layout -->
@@ -50,16 +52,16 @@
                 android:id="@+id/profilePicture"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:layout_gravity="center"
+                android:layout_gravity="left"
                 android:layout_marginBottom="16dp"
-                android:background="@android:color/darker_gray"
+                android:background="@drawable/custom_button_background"
                 android:contentDescription="Profile Picture" />
 
             <!-- Mini Boxes for Profile Fields -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
+                android:orientation="horizontal"
                 android:layout_marginBottom="8dp"
                 android:background="@drawable/custom_button_background"
                 android:padding="8dp">
@@ -69,7 +71,16 @@
                     android:id="@+id/name"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Name: John Doe"
+                    android:fontFamily="sans-serif"
+                    android:text="Name: "
+                    android:textStyle="bold"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/nameValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="John Doe"
                     android:textSize="18sp" />
 
             </LinearLayout>
@@ -77,7 +88,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
+                android:orientation="horizontal"
                 android:layout_marginBottom="8dp"
                 android:background="@drawable/custom_button_background"
                 android:padding="8dp">
@@ -87,7 +98,15 @@
                     android:id="@+id/emailAddress"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Email: JohnDoe@example.com"
+                    android:text="Email: "
+                    android:textStyle="bold"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/emailValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="JohnDoe@example.com"
                     android:textSize="18sp" />
 
             </LinearLayout>
@@ -95,7 +114,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
+                android:orientation="horizontal"
                 android:layout_marginBottom="8dp"
                 android:background="@drawable/custom_button_background"
                 android:padding="8dp">
@@ -105,7 +124,15 @@
                     android:id="@+id/phoneNumber"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Phone Number: +44 1234 5678"
+                    android:text="Phone Number: "
+                    android:textStyle="bold"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/phoneValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+44 1234 5678"
                     android:textSize="18sp" />
 
             </LinearLayout>
@@ -113,7 +140,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
+                android:orientation="horizontal"
                 android:layout_marginBottom="8dp"
                 android:background="@drawable/custom_button_background"
                 android:padding="8dp">
@@ -123,7 +150,15 @@
                     android:id="@+id/address"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Address: 123 Main Street, Anytown, AA AA"
+                    android:text="Address: "
+                    android:textStyle="bold"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/addressValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="123 Main Street, Anytown, AA AA"
                     android:textSize="18sp" />
 
             </LinearLayout>
@@ -131,7 +166,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
+                android:orientation="horizontal"
                 android:layout_marginBottom="8dp"
                 android:background="@drawable/custom_button_background"
                 android:padding="8dp">
@@ -141,7 +176,15 @@
                     android:id="@+id/jobTitle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Job Title: Manager"
+                    android:text="Job Title: "
+                    android:textStyle="bold"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/jobTitleValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Manager"
                     android:textSize="18sp" />
 
             </LinearLayout>
@@ -149,7 +192,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
+                android:orientation="horizontal"
                 android:layout_marginBottom="8dp"
                 android:background="@drawable/custom_button_background"
                 android:padding="8dp">
@@ -159,12 +202,32 @@
                     android:id="@+id/salary"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Salary: £100,000"
+                    android:fontFamily="sans-serif"
+                    android:text="Salary: "
+                    android:textStyle="bold"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/salaryValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="£100,000"
                     android:textSize="18sp" />
 
             </LinearLayout>
-
         </LinearLayout>
+
+        <Button
+            android:id="@+id/EditProfileButton"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_button_background"
+            android:fontFamily="sans-serif"
+            android:text="Edit Profile"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textAllCaps="false"/>
 
     </LinearLayout>
 
@@ -185,31 +248,33 @@
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="@id/bottomBorderTitle"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginBottom="0dp"
-        android:paddingBottom="0dp">
+        app:layout_constraintEnd_toEndOf="parent">
 
-        <!-- Back Button -->
         <Button
             android:id="@+id/backButton"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="Back"
             android:background="@color/blue"
-            android:textSize="18sp"
+            android:textSize="20sp"
             android:textStyle="bold"
-            android:layout_weight="1" />
+            android:fontFamily="sans-serif"
+            android:layout_weight="1"
+            android:contentDescription="Back button"
+            android:textAllCaps="false" />
 
-        <!-- Logout Button -->
         <Button
             android:id="@+id/logoutButton"
             android:layout_width="0dp"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:text="Logout"
             android:background="@color/blue"
-            android:textSize="18sp"
+            android:textSize="20sp"
             android:textStyle="bold"
-            android:layout_weight="1" />
+            android:fontFamily="sans-serif"
+            android:layout_weight="1"
+            android:contentDescription="Logout button"
+            android:textAllCaps="false" />
 
     </LinearLayout>
 
