@@ -8,6 +8,25 @@
     android:layout_height="match_parent"
     tools:context=".ProfileActivity">
 
+    <!-- Things to Create
+
+        Top Border
+            Employee Profile Title
+        Profile Box
+            Profile Picture
+            Name
+            Email Address
+            Phone Number
+            Address
+            Job Title
+            Salary
+        Edit Profile Button
+        Bottom Border
+            Back Button
+            Logout Button
+
+     -->
+
     <!-- Top Border Title -->
     <TextView
         android:id="@+id/topBorderTitle"

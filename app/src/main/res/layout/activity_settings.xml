@@ -7,6 +7,21 @@
     android:layout_height="match_parent"
     tools:context=".ProfileActivity">
 
+    <!-- Things to Create
+
+        Top Border
+            Settings Title
+        Alerts Title
+            Push Notifications
+            Email Notifications
+        Preferences
+            Light Mode
+            Dark Mode
+        Bottom Border
+            Back Button
+            Logout Button
+     -->
+
     <TextView
         android:id="@+id/topBorderTitle"
         android:layout_width="match_parent"

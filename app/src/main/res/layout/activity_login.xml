@@ -7,6 +7,17 @@
     android:layout_height="match_parent"
     tools:context=".LoginActivity">
 
+    <!-- Things to Create
+
+        Top Border
+            Login Title
+        Username Field
+        Password Field
+            Forgotten Password
+        Bottom Border
+
+     -->
+
 
     <!-- Top Border Title -->
     <TextView

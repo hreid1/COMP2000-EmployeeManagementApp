@@ -8,6 +8,23 @@
     android:background="#F5F5F5"
     tools:context=".EmployeeHolidayActivity">
 
+    <!-- Things to Create
+
+        Top Border
+            Employee Holiday Request Title
+        Holiday Request Form
+            Name
+            Job Title
+            Start Date
+            End Date
+            Hours of Pay
+            Reason for Holiday
+        Submit Request Button
+        Bottom Border
+            Back Button
+            Logout Button
+     -->
+
     <TextView
         android:id="@+id/topBorderTitle"
         android:layout_width="0dp"
@@ -187,16 +204,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:padding="16dp"/>
 
+    <!-- Bottom Navigation Buttons -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="@id/bottomBorderTitle"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginBottom="0dp"
-        android:paddingBottom="0dp"
-        >
+        app:layout_constraintEnd_toEndOf="parent">
 
         <Button
             android:id="@+id/backButton"
@@ -204,20 +219,24 @@
             android:layout_height="wrap_content"
             android:text="Back"
             android:background="@color/blue"
-            android:textSize="18sp"
+            android:textSize="20sp"
             android:textStyle="bold"
+            android:fontFamily="sans-serif"
             android:layout_weight="1"
+            android:contentDescription="Back button"
             android:textAllCaps="false" />
 
         <Button
             android:id="@+id/logoutButton"
             android:layout_width="0dp"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:text="Logout"
             android:background="@color/blue"
-            android:textSize="18sp"
+            android:textSize="20sp"
             android:textStyle="bold"
+            android:fontFamily="sans-serif"
             android:layout_weight="1"
+            android:contentDescription="Logout button"
             android:textAllCaps="false" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

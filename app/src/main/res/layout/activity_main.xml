@@ -7,6 +7,17 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <!-- Things to Create
+
+        Top Border
+        Login Button
+        Sign Up Button
+        Bottom Border
+        
+        Need to do edit employee profile
+
+     -->
+
     <TextView
         android:id="@+id/topBorderTitle"
         android:layout_width="match_parent"

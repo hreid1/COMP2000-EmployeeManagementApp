@@ -6,6 +6,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <!-- Things to Create
+
+        Top Border
+            Employee Dashboard Title
+        Profile Button
+        Holiday Requests Button
+        Settings Button
+        Bottom Border
+            Logout Button
+
+     -->
+
     <!-- Top Border Title -->
     <TextView
         android:id="@+id/topBorderTitle"
