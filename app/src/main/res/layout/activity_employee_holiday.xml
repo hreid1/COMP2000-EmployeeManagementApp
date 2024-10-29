@@ -8,7 +8,6 @@
     android:background="#F5F5F5"
     tools:context=".EmployeeHolidayActivity">
 
-
     <TextView
         android:id="@+id/topBorderTitle"
         android:layout_width="0dp"
@@ -24,6 +23,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:padding="16dp"/>
 
+    <!-- Main Content -->
+
     <LinearLayout
         android:id="@+id/holidayRequestFormBox"
         android:layout_width="0dp"
@@ -37,59 +38,127 @@
         android:layout_marginBottom="16dp"
         android:orientation="vertical">
 
-        <EditText
-            android:id="@+id/name"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Name of Employee"
-            android:textSize="16sp"
-            android:padding="10dp"
-            android:layout_marginBottom="16dp"/>
+        <!-- The Form Fields (box in the box) -->
 
-        <EditText
-            android:id="@+id/jobTitle"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Job Title"
-            android:textSize="16sp"
+            android:background="@drawable/custom_button_background"
             android:padding="10dp"
-            android:layout_marginBottom="16dp"/>
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
 
-        <EditText
-            android:id="@+id/startDate"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Start Date (YYYY-MM-DD)"
-            android:textSize="16sp"
-            android:padding="10dp"
-            android:layout_marginBottom="16dp"/>
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name of Employee"
+                android:textSize="16sp"
+                android:padding="5dp"
+                android:layout_marginBottom="0dp"
+                android:background="@android:color/transparent"
+                android:inputType="textPersonName" />
+        </LinearLayout>
 
-        <EditText
-            android:id="@+id/endDate"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="End Date (YYYY-MM-DD)"
-            android:textSize="16sp"
+            android:background="@drawable/custom_button_background"
             android:padding="10dp"
-            android:layout_marginBottom="16dp"/>
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
 
-        <EditText
-            android:id="@+id/hoursOfPay"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Hours of Pay"
-            android:textSize="16sp"
-            android:padding="10dp"
-            android:layout_marginBottom="16dp"/>
+            <EditText
+                android:id="@+id/jobTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Job Title"
+                android:textSize="16sp"
+                android:padding="5dp"
+                android:layout_marginBottom="0dp"
+                android:background="@android:color/transparent"
+                android:inputType="text" />
+        </LinearLayout>
 
-        <EditText
-            android:id="@+id/reasonHoliday"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Reason for Holiday"
-            android:textSize="16sp"
+            android:background="@drawable/custom_button_background"
             android:padding="10dp"
-            android:layout_marginBottom="16dp"/>
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/startDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Start Date (YYYY-MM-DD)"
+                android:textSize="16sp"
+                android:padding="5dp"
+                android:layout_marginBottom="0dp"
+                android:background="@android:color/transparent"
+                android:inputType="date" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_button_background"
+            android:padding="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/endDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="End Date (YYYY-MM-DD)"
+                android:textSize="16sp"
+                android:padding="5dp"
+                android:layout_marginBottom="0dp"
+                android:background="@android:color/transparent"
+                android:inputType="date" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_button_background"
+            android:padding="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/hoursOfPay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Hours of Pay"
+                android:textSize="16sp"
+                android:padding="5dp"
+                android:layout_marginBottom="0dp"
+                android:background="@android:color/transparent"
+                android:inputType="number" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_button_background"
+            android:padding="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/reasonHoliday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Reason for Holiday"
+                android:textSize="16sp"
+                android:padding="5dp"
+                android:layout_marginBottom="0dp"
+                android:background="@android:color/transparent"
+                android:inputType="textMultiLine" />
+        </LinearLayout>
 
         <Button
             android:id="@+id/submitRequestButton"
@@ -101,8 +170,10 @@
             android:textColor="@android:color/black"
             android:padding="12dp"
             android:minWidth="48dp"
-            android:minHeight="48dp" />
+            android:minHeight="48dp"
+            android:textAllCaps="false"/>
     </LinearLayout>
+
 
     <TextView
         android:id="@+id/bottomBorderTitle"
@@ -135,7 +206,8 @@
             android:background="@color/blue"
             android:textSize="18sp"
             android:textStyle="bold"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:textAllCaps="false" />
 
         <Button
             android:id="@+id/logoutButton"
@@ -145,6 +217,7 @@
             android:background="@color/blue"
             android:textSize="18sp"
             android:textStyle="bold"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:textAllCaps="false" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

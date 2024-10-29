@@ -68,10 +68,7 @@
             android:text="Settings"
             android:textColor="@color/black"
             android:textSize="20sp" />
-
     </LinearLayout>
-
-
 
     <!-- Bottom Border Title -->
     <TextView
