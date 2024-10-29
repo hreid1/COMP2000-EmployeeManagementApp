@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Top Border Title -->
+    <TextView
+        android:id="@+id/topBorderTitle"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#007BFF"
+        android:gravity="center"
+        android:text="Employee Dashboard"
+        android:textSize="24sp"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Content Layout -->
+    <LinearLayout
+        android:id="@+id/contentLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/topBorderTitle"
+        app:layout_constraintBottom_toTopOf="@id/bottomBorderTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Profile Button -->
+        <Button
+            android:id="@+id/profileButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Profile"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:background="@drawable/custom_button_background"
+            android:gravity="center"
+            android:paddingHorizontal="24dp" />
+
+        <!-- Holiday Request Button -->
+        <Button
+            android:id="@+id/holidayRequestButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Holiday Requests"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:background="@drawable/custom_button_background"
+            android:gravity="center"
+            android:paddingHorizontal="24dp"
+            android:layout_marginStart="12dp" />
+    </LinearLayout>
+
+
+
+
+    <!-- Bottom Border Title -->
+    <TextView
+        android:id="@+id/bottomBorderTitle"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#007BFF"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <!-- Bottom Buttons (Logout and Settings) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="@id/bottomBorderTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp">
+
+
+
+        <Button
+            android:id="@+id/logoutButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:textSize="18sp"
+            android:background="@color/blue"
+            android:fontFamily="sans-serif"
+            android:textStyle="bold"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/settingsButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Settings"
+            android:background="@color/blue"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
