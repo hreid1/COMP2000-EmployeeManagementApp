@@ -79,8 +79,6 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:background="@drawable/custom_button_background"
-                android:layout_marginBottom="10dp"
-                android:padding="10dp"
                 android:gravity="center_vertical"
                 android:paddingTop="8dp">
 
@@ -90,6 +88,7 @@
                     android:layout_weight="1"
                     android:text="Email Notifications"
                     android:textColor="@android:color/black"
+                    android:padding="10dp"
                     android:textSize="16sp" />
 
                 <androidx.appcompat.widget.SwitchCompat
@@ -105,6 +104,7 @@
                 android:orientation="horizontal"
                 android:background="@drawable/custom_button_background"
                 android:gravity="center_vertical"
+                android:layout_marginTop="10dp"
                 android:paddingTop="8dp">
 
                 <TextView
