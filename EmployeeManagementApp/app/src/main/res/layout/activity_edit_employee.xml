@@ -68,20 +68,7 @@
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp">
 
-            <TextView
-                android:id="@+id/profileEditedSuccessfullyPrompt"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Profile Edited Successfully"
-                android:textColor="@color/black"
-                android:textSize="20dp"
-                android:padding="10dp"
-                android:layout_gravity="center_horizontal"
-                android:background="@drawable/custom_button_background"
-                app:layout_constraintTop_toBottomOf="@id/topBorderTitle"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                android:layout_marginTop="2dp" />
+
 
             <!-- Profile Picture -->
             <ImageView

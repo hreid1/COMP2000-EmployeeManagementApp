@@ -35,11 +35,9 @@ public class LoginActivity extends AppCompatActivity {
                     // Show error if fields are empty
                     Toast.makeText(LoginActivity.this, "Please enter both email and password", Toast.LENGTH_SHORT).show();
                 } else {
-                    // Handle login logic here (e.g., authentication)
                     // Placeholder: Show toast message for demonstration
                     Toast.makeText(LoginActivity.this, "Logging in...", Toast.LENGTH_SHORT).show();
 
-                    // Example of proceeding with login (replace with your actual authentication logic)
                     if (authenticateUser(email, password)) {
                         Intent intent = new Intent(LoginActivity.this, EmployeeDashboardActivity.class);
                         startActivity(intent);
