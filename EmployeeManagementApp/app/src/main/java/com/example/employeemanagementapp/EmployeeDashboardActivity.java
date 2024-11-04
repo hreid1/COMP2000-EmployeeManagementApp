@@ -1,24 +1,52 @@
 package com.example.employeemanagementapp;
 
+import android.content.Intent;
 import android.os.Bundle;
-
-import androidx.activity.EdgeToEdge;
+import android.view.View;
+import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 public class EmployeeDashboardActivity extends AppCompatActivity {
+
+    private Button profileButton;
+    private Button holidayRequestButton;
+    private Button settingsButton;
+    private Button logoutButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
         setContentView(R.layout.activity_employee_dashboard);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
+
+        // Initialize buttons
+        profileButton = findViewById(R.id.profileButton);
+        holidayRequestButton = findViewById(R.id.holidayRequestButton);
+        settingsButton = findViewById(R.id.settingsButton);
+        logoutButton = findViewById(R.id.logoutButton);
+
+        // Set up click listeners for the buttons
+        profileButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(EmployeeDashboardActivity.this, ProfileActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        holidayRequestButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(EmployeeDashboardActivity.this, EmployeeHolidayActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        settingsButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(EmployeeDashboardActivity.this, SettingsActivity.class);
+                startActivity(intent);
+            }
         });
     }
 }
